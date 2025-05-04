@@ -1,0 +1,383 @@
+/* Geral Settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Nav settings */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* Logo Settings*/
+.logo a {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-left: 20px;
+}
+
+.logo span {
+    color: green;
+}
+
+/* li settings */
+li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+li a {
+    font-size: 18px;
+    margin-right: 45px;
+    color: black;
+    position: relative;
+}
+
+li a::after{
+    content: '';
+    position: absolute;
+    height: 2.3px;
+    width: 100%;
+    position: absolute;
+    background-color: green;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    border-radius: 50px;
+    transition: .3s;
+}
+
+li a:hover::after{
+    transform: scaleX(1);
+}
+
+/* Main */
+
+/* About */
+
+.home {
+    padding-top: 120px;
+    padding-left: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-box span{
+    color: rgba(0, 128, 0, 0.753);
+}
+
+.btn {
+    color: black;
+    position: relative;
+    border-radius: 30px;
+    padding: 12px 30px;
+    border: 2px solid  rgba(0, 128, 0, 0.795);
+    background: transparent;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.459);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: .3s;
+}
+
+.btn:hover::before{
+    transform: scaleX(0);
+}
+
+.btn:hover{
+    color: black ;
+}
+
+.img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+}
+
+/* Services */
+
+.service {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 50px;   
+}
+
+.service span{
+    color: green;
+}
+
+.service-box {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-box span {
+    color: green;
+}
+
+.text p {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.box-img  img {
+    height: auto;
+    width: 100px;
+    padding-bottom: 20px;
+}
+   
+.btn-box {
+    color: black;
+    position: relative;
+    border-radius: 30px;
+    padding: 12px 40px;
+    border: 2px solid  rgba(0, 128, 0, 0.795);
+    background: transparent;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.btn-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.459);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: .3s;
+}
+
+.btn-box:hover::before{
+    transform: scaleX(0);
+}
+
+.services .service-box{
+    padding-bottom: 100px;
+}
+
+/* Conversio */
+.conversion h1 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 50px;
+
+}
+
+.conversion h1 span{
+    color: green;
+}
+.conversion hr {
+    margin-left: 533px;
+    border: none;
+    width: 159px;
+    height: 4px;
+    background-color: green;
+    border-radius: 5px;
+
+}
+.conversion{
+    height: 60vh;
+}
+
+.label {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgba(0, 128, 0, 0.795);
+}
+
+/* Tables */
+
+.tables{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+    
+
+
+.table-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.table-title hr{
+    margin-left: 425px;
+    border: none;
+    width: 159px;
+    height: 4px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.table-title {
+    padding-bottom: 20px;
+}
+
+.table-content{
+    width: 100%;
+    border: 10px;
+    padding: 90px;
+}
+
+.table-content table {
+    width: 50%;
+    border: 10px;
+    text-align: center;
+}
+
+.table-content table {
+    width: 600px;
+    padding-bottom: 50px;
+}
+
+
+.table-content table td {
+    font-size: 15px;
+}
+
+.table-content table th{
+    font-size: 20px;
+    padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+.table-content table td{
+    padding: 8px;
+}
+
+.table-content table #table-name{
+    padding-left: 20px;
+}
+
+.table-content table .coin-name {
+    display: flex;
+    justify-content: flex-start;
+    border-color: green;
+}
+
+.table-img img {
+    height: 400px;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.table-content .table-label label{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+/* Footer */
+
+footer {
+    border-radius: 120px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+footer {
+    background-color: rgba(0, 255, 128, 0.13);
+}
+
+
+.icones img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer-content ul li {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.footer-content h3, p {
+    padding-bottom: 15px;
+
+}
+
+.footer-bottom {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.designed {
+    color: rgba(0, 128, 0, 0.856);
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="api.js"></script>
+</head>
+<body>
+    <header>
+        <div class = "navbar">
+            <div class="logo">
+                <a href="#">FastCurrency <span>.</span></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rates</a></li>
+                    <li><a href="#">Conversion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <section class="main">
+            <div class="home">
+                <div class="text-box">
+                    <h1><span>About</span></h1>
+                    <h1>FastCurrency <span>.</span></h1>
+                    
+                    <p>
+                        Welcome to our currency exchange and conversion platform. <br>
+                        We provide updated rates from banks such as BAI, BIC, and Standard Bank <br>
+                        ensuring accurate information for your financial decisions.
+                    </p>
+                    <button class="btn"> Show Services</button>
+                </div>
+                <img src="/images/img1.jpg" class="img" alt="imagem">
+            </div>
+            
+            
+            <div class="services">
+                <h1 class="service">Serv<span>ices</span></h1>
+
+                <div class="service-box">
+
+                    <div class="box">
+                    
+                        <div class="text">
+                            <div class="box-img">
+                                <img src="images/dollar-coin_2140402.png" alt="banco">
+                            </div>
+                            <h3>Currency <span>Conversion</span></h3>
+                            <p>
+                                Convert money from Angolan Kwanza (AOA) <br>
+                                to other currencies or from other currencies <br>
+                                to Kwanza easily and quickly.
+                                </p>
+                            <button class="btn-box">Convert Now</button>
+                        </div>
+
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/bank_2830155.png" alt="banco">
+                        </div>
+                        <div class="text">
+                            <h3>Check Exchange Rates <span>.</span></h3>
+                            <p>
+                                See the latest exchange rates from banks <br>
+                                like BAI, BIC, and Standard Bank for <span>exchanging</span> <br>
+                                Kwanza with other currencies.
+                            </p>
+                            <button class="btn-box">Check Now</button>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="images/profit_3188136.png" alt="banco">
+                        </div>
+                        <div class="text">
+                            <h3>Updated <span>Rates</span></h3>
+                            <p>
+                                Get real-time updates on currency rates to <br>
+                                know the best time to exchange Kwanza for  <br>
+                                another currency or vice versa.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="conversion">
+                <h1>Conver<span>sion</span></h1>
+                <hr>
+               
+                <div class="label">
+                    <form action="", method="get">
+                        <div class="values">
+                            <label for="value">Value</label>
+                            <input type="number", id="value", required, class="input">
+
+                            <label for="from">From</label>
+                            <select name="from" id="value", class="input">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="KZ">KZ</option>
+                            </select>
+
+                            <label for="to">To</label>
+                            <select name="to" id="to", class="input">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="KZ">KZ</option>
+                            </select>
+
+                            <label for="bank">Bank</label>
+                            <select name="bank" id="bank", class="input">
+                                <option value="BAI">BAI</option>
+                                <option value="BIC">BIC</option>
+                                <option value="Standard">Standard Bank</option>
+                            </select>
+
+                        </div>
+                        
+                        <button type="submit" class="btn" >Convert</button>
+                        
+                    </form>
+                    
+                   
+                </div>
+            </div>
+
+            <div class="table-title">
+                <h1>Live exchange rates</h1>
+                <hr>
+            </div>
+            <div class="tables">
+                <div class="table-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="coin-name", id="table-name"> Foreign Exchange</th>
+                                <th>Buy</th>
+                                <th>Sell</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="coin-name">EURO</td>
+                                <td>00095</td>
+                                <td>00099</td>
+                            </tr>
+    
+                            <tr>
+                                <td class="coin-name">Dollar US</td>
+                                <td>00095</td>
+                                <td>00099</td>
+                            </tr>
+    
+                            <tr>
+                                <td class="coin-name">Canadian Dollar</td>
+                                <td>00095</td>
+                                <td>00099</td>
+                            </tr>
+    
+                            <tr>
+                                <td class="coin-name">South African Rand</td>
+                                <td>00095</td>
+                                <td>00099</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="table-label">
+                        <label for="from">From</label>
+                        <select name="from" id="bank", class="input">
+                            <option value="BAI">BAI</option>
+                            <option value="BIC">BIC</option>
+                            <option value="STD">STD</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-img">
+                    <img src="/images/img5.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: info@gmail.com</p>
+            <p>Phone: +123 93436267</p>
+            <p>Address: Luanda</p>
+        </div>
+
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Convert Now</a></li>
+                <li><a href="#">Live Exchange Rates</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <li class="icones"><a href="#"><img src="/images/facebook_1077041.png" alt="facebook"></a></li>
+            <li class="icones"><a href="#"><img src="/images/instagram_1076991.png" alt="instagram"></a></li>
+            <li class="icones"><a href="#"><img src="/images/linkedin_1419502.png" alt="LinkedIn"></a></li>
+
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>Copyright &copy;2025, Designed by <span class="designed">Anabelmo Feijo</span></p>
+    </div>
+</body>
+</html>
