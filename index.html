@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="api.js"></script>
+    
 </head>
 <body>
     <header>
@@ -122,7 +122,7 @@
                             </select>
 
                             <label for="bank">Bank</label>
-                            <select name="bank" id="bank", class="input">
+                            <select name="bank" id="bank" class="input">
                                 <option value="BAI">BAI</option>
                                 <option value="BIC">BIC</option>
                                 <option value="Standard">Standard Bank</option>
@@ -154,35 +154,35 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="coin-name">EURO</td>
-                                <td>00095</td>
-                                <td>00099</td>
+                                <td class="coin-name" id="coin1">EURO</td>
+                                <td  id="buy1" >00095</td>
+                                <td id="sell1" >00099</td>
                             </tr>
     
                             <tr>
-                                <td class="coin-name">Dollar US</td>
-                                <td>00095</td>
-                                <td>00099</td>
+                                <td class="coin-name" id="coin2">Dollar US</td>
+                                <td id="buy2">00095</td>
+                                <td id="sell2">00099</td>
                             </tr>
     
                             <tr>
-                                <td class="coin-name">Canadian Dollar</td>
-                                <td>00095</td>
-                                <td>00099</td>
+                                <td class="coin-name" id="coin3">Canadian Dollar</td>
+                                <td id="buy3">00095</td>
+                                <td id="sell3">00099</td>
                             </tr>
     
                             <tr>
-                                <td class="coin-name">South African Rand</td>
-                                <td>00095</td>
-                                <td>00099</td>
+                                <td class="coin-name" id="coin4">South African Rand</td>
+                                <td id="buy4">00095</td>
+                                <td id="sell4">00099</td>
                             </tr>
                         </tbody>
                     </table>
                     
                     <div class="table-label">
                         <label for="from">From</label>
-                        <select name="from" id="bank", class="input">
-                            <option value="BAI">BAI</option>
+                        <select name="from" id="bank" class="input">
+                            <option value="BAI" >BAI</option>
                             <option value="BIC">BIC</option>
                             <option value="STD">STD</option>
                         </select>
@@ -226,5 +226,7 @@
     <div class="footer-bottom">
         <p>Copyright &copy;2025, Designed by <span class="designed">Anabelmo Feijo</span></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
