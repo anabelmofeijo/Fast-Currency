@@ -337,6 +337,11 @@ li a:hover::after{
     margin-right: 20px;
 }
 
+.live-btn {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
 /* Footer */
 
 footer {
