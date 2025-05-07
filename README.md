@@ -47,8 +47,8 @@ Digite o valor e selecione a moeda para ver o valor equivalente em KZ ou o inver
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **\ Anabelmo Feijó **
-📧 Email: \[anabelmofeijo@gmail.com(mailto:anabelmofeijo@gmail.com.com)]
+Desenvolvido por Anabelmo Feijó 
+📧 Email: anabelmofeijo@gmail.com
 🌍 Projeto feito com foco em Angola 🇦🇴
 
 ---
