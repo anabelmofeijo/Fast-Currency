@@ -221,7 +221,8 @@ li a:hover::after{
 
 }
 .conversion{
-    height: 60vh;
+    padding-bottom: 30px;
+    
 }
 
 .label {
@@ -245,6 +246,26 @@ li a:hover::after{
     border-color: rgba(0, 128, 0, 0.795);
 }
 
+.conversion-text{
+    padding-top: 140px;
+}
+
+.text-conversion {
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.result{
+    padding-top: 15px;
+}
+#result {
+    font-weight: 300;
+}
 /* Tables */
 
 .tables{
