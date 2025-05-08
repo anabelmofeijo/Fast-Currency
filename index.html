@@ -104,33 +104,33 @@
                 <div class="label">
                     <form action="", method="get">
                         <div class="values">
-                            <label for="value">Value</label>
-                            <input type="number", id="value", required, class="input">
+                            <label for="amount">Value</label>
+                            <input type="number" id="amount" required class="input">
 
                             <label for="from">From</label>
-                            <select name="from" id="value", class="input">
+                            <select name="from" id="from", class="input">
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
-                                <option value="KZ">KZ</option>
+                                <option value="AOA">AOA</option>
                             </select>
 
                             <label for="to">To</label>
                             <select name="to" id="to", class="input">
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
-                                <option value="KZ">KZ</option>
+                                <option value="AOA">AOA</option>
                             </select>
 
-                            <label for="bank">Bank</label>
-                            <select name="bank" id="bank" class="input">
+                            <label for="bank-label">Bank</label>
+                            <select name="bank" id="bank-option" class="input">
                                 <option value="BAI">BAI</option>
                                 <option value="BIC">BIC</option>
-                                <option value="Standard">Standard Bank</option>
+                                <option value="STD">STD</option>
                             </select>
 
                         </div>
                         
-                        <button type="submit" class="btn" >Convert</button>
+                        <button type="submit" class="btn" id="convert-now">Convert</button>
                         
                     </form>
                     

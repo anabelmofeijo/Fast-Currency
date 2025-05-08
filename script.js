@@ -112,3 +112,125 @@ function std(){
             document.querySelector('#sell4').textContent = data[19].sell
         })
 }
+
+function bai_conversion(){
+   
+    const amount_input = document.getElementById('amount');
+    const amount = amount_input.value;
+    const target_currency_label = document.getElementById('to');
+    const target_currency = target_currency_label.value;
+    const source_currency_label = document.getElementById('from');
+    const source_currency = source_currency_label.value;
+    
+
+    bai_convert_now(source_currency, target_currency, amount);
+     
+}
+
+function bai_convert_now(source_currency, target_currency, amount){
+    fetch (`https://exchange-api-9mmx.onrender.com/bai/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
+        .then (response => response.json())
+        .then (data => {
+            console.log(data);
+            console.log(data.converted_amount);
+
+            if (data.converted_amount){
+                document.querySelector('#result').textContent = data.converted_amount + " KZ";
+            }
+            else {
+                document.querySelector('#result').textContent = "Try Again, Please!";
+
+            }
+                
+        })
+}
+
+function bic_convert_now(source_currency, target_currency, amount){
+    fetch (`https://exchange-api-9mmx.onrender.com/bic/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
+        .then (response => response.json())
+        .then (data => {
+            console.log(data);
+            console.log(data.converted_amount);
+
+            if (data.converted_amount){
+                document.querySelector('#result').textContent = data.converted_amount + " KZ";
+            }
+            else {
+                document.querySelector('#result').textContent = "Try Again, Please!";
+
+            }
+                
+        })
+}
+
+function bic_conversion(){
+
+    const amount_input = document.getElementById('amount');
+    const amount = amount_input.value;
+    const target_currency_label = document.getElementById('to');
+    const target_currency = target_currency_label.value;
+    const source_currency_label = document.getElementById('from');
+    const source_currency = source_currency_label.value;
+    
+    bic_convert_now(source_currency, target_currency, amount)
+}
+
+
+function std_convert_now(source_currency, target_currency, amount){
+    fetch (`https://exchange-api-9mmx.onrender.com/standard/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
+        .then (response => response.json())
+        .then (data => {
+            console.log(data);
+            console.log(data.converted_amount);
+
+            if (data.converted_amount){
+                document.querySelector('#result').textContent = data.converted_amount + " KZ";
+            }
+            else {
+                document.querySelector('#result').textContent = "Try Again, Please!";
+
+            }
+                
+        })
+}
+
+function std_conversion(){
+    const amount_input = document.getElementById('amount');
+    const amount = amount_input.value;
+    const target_currency_label = document.getElementById('to');
+    const target_currency = target_currency_label.value;
+    const source_currency_label = document.getElementById('from');
+    const source_currency = source_currency_label.value;
+        
+
+    std_convert_now(source_currency, target_currency, amount);
+      
+}
+
+
+function conversion(){
+    const bank_option = document.getElementById('bank-option')
+    const button = document.getElementById('convert-now')
+
+    button.addEventListener("click", () => {
+        event.preventDefault();
+
+        const bank = bank_option.value;
+
+        if (bank == "BAI"){
+            bai_conversion();
+        }
+        else if (bank == "BIC"){
+            bic_conversion();
+        }
+        else if (bank == "STD"){
+            std_conversion();
+        }
+        else{
+            console.log("Error");
+        }
+    });
+    
+}
+
+conversion();
