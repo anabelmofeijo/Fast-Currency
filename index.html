@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
+<body id="home">
     <header>
         <div class = "navbar">
             <div class="logo">
@@ -17,9 +17,9 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Rates</a></li>
-                    <li><a href="#">Conversion</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#live-exchange">Rates</a></li>
+                    <li><a href="#conversion">Conversion</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +27,7 @@
 
     <main>
         <section class="main">
-            <div class="home">
+            <div class="home" >
                 <div class="text-box">
                     <h1><span>About</span></h1>
                     <h1>FastCurrency <span>.</span></h1>
@@ -37,14 +37,14 @@
                         We provide updated rates from banks such as BAI, BIC, and Standard Bank <br>
                         ensuring accurate information for your financial decisions.
                     </p>
-                    <button class="btn"> Show Services</button>
+                    <a href="#services"><button class="btn" > Show Services</button></a>
                 </div>
                 <img src="/images/img1.jpg" class="img" alt="imagem">
             </div>
             
             
-            <div class="services">
-                <h1 class="service">Serv<span>ices</span></h1>
+            <div class="services" id="services">
+                <h1 class="service" >Serv<span>ices</span></h1>
 
                 <div class="service-box">
 
@@ -60,7 +60,7 @@
                                 to other currencies or from other currencies <br>
                                 to Kwanza easily and quickly.
                                 </p>
-                            <button class="btn-box">Convert Now</button>
+                            <a href="#conversion"><button class="btn-box">Convert Now</button></a>
                         </div>
 
                     </div>
@@ -76,7 +76,7 @@
                                 like BAI, BIC, and Standard Bank for <span>exchanging</span> <br>
                                 Kwanza with other currencies.
                             </p>
-                            <button class="btn-box">Check Now</button>
+                            <a href="#live-exchange"><button class="btn-box">Check Now</button></a>
                         </div>
                     </div>
 
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="conversion">
+            <div class="conversion" id="conversion">
                 <h1>Conver<span>sion</span></h1>
                 <hr>
                
@@ -136,7 +136,7 @@
                     
                 </div>
                 <div class="result">
-                    <h1 class="text-conversion" id="result">0.00 KZ</h1>
+                    <h1 class="text-conversion" id="result">0.00 AOA</h1>
                 </div>
 
                 <div class="conversion-text">
@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="table-title">
+            <div class="table-title" id="live-exchange">
                 <h1>Live exchange rates</h1>
                 <hr>
             </div>

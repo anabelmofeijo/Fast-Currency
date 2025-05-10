@@ -134,8 +134,12 @@ function bai_convert_now(source_currency, target_currency, amount){
             console.log(data);
             console.log(data.converted_amount);
 
+            
+            const coin_simbol = document.getElementById('to');
+            const coin = coin_simbol.value;
+
             if (data.converted_amount){
-                document.querySelector('#result').textContent = data.converted_amount + " KZ";
+                document.querySelector('#result').textContent = `${data.converted_amount} ${coin}`;
             }
             else {
                 document.querySelector('#result').textContent = "Try Again, Please!";
@@ -152,8 +156,12 @@ function bic_convert_now(source_currency, target_currency, amount){
             console.log(data);
             console.log(data.converted_amount);
 
+            
+            const coin_simbol = document.getElementById('to');
+            const coin = coin_simbol.value;
+
             if (data.converted_amount){
-                document.querySelector('#result').textContent = data.converted_amount + " KZ";
+                document.querySelector('#result').textContent = `${data.converted_amount} ${coin}`;
             }
             else {
                 document.querySelector('#result').textContent = "Try Again, Please!";
@@ -183,8 +191,11 @@ function std_convert_now(source_currency, target_currency, amount){
             console.log(data);
             console.log(data.converted_amount);
 
+            const coin_simbol = document.getElementById('to');
+            const coin = coin_simbol.value;
+
             if (data.converted_amount){
-                document.querySelector('#result').textContent = data.converted_amount + " KZ";
+                document.querySelector('#result').textContent =  `${data.converted_amount} ${coin}`;
             }
             else {
                 document.querySelector('#result').textContent = "Try Again, Please!";

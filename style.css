@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
     
 }
 
@@ -71,7 +72,7 @@ li a:hover::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 120px;
+    padding-bottom: 160px;
 }
 
 .text-box h1{
@@ -128,13 +129,18 @@ li a:hover::after{
 
 /* Services */
 
+.services{
+    padding-bottom: 80px;
+}
+
 .service {
     padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    /*height: 50vh;*/
     font-size: 50px;   
+    padding-bottom: 50px;
 }
 
 .service span{
@@ -203,7 +209,7 @@ li a:hover::after{
     display: flex; 
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 50px;
 
 }
