@@ -1,16 +1,17 @@
 /* Geral Settings */
 * {
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    padding-right: 5;
     
 }
 
 /* Nav settings */
 .navbar {
+    padding-left: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,7 +68,7 @@ li a:hover::after{
 
 .home {
     padding-top: 120px;
-    padding-left: 20px;
+    padding-left: 40px;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -412,4 +413,8 @@ footer {
 
 .designed {
     color: rgba(0, 128, 0, 0.856);
+}
+
+footer {
+    padding-left: 60px;
 }
