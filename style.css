@@ -421,54 +421,8 @@ footer {
 
 
 /* Para tablets e telas menores */
-@media (max-width: 1024px) {
-    .img {
-        display: none; 
-    }
-    
-    .home {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    .text-box {
-        width: 100%;
-    }
-    
-    .service-box {
-        flex-direction: column;
-        gap: 50px;
-    }
-    
-    .tables {
-        flex-direction: column;
-    }
-    
-    .table-content {
-        padding: 30px;
-    }
-    
-    .table-content table {
-        width: 100%;
-    }
-    
-    .table-img img {
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
-    }
-    
-    footer {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-}
+@media (min-width: 400px) and (max-width: 628px) {
 
-/* Para celulares */
-@media (max-width: 768px) {
     .navbar {
         padding-left: 20px;
         display: flex;
@@ -537,33 +491,5 @@ footer {
     
     .footer-content ul {
         padding: 0;
-    }
-}
-
-/* Pequenos ajustes para telas muito pequenas */
-@media (max-width: 480px) {
-    .text-box h1 {
-        font-size: 28px;
-    }
-    
-    .service, .conversion h1, .table-title h1 {
-        font-size: 28px;
-    }
-    
-    .text-box p, .text p {
-        font-size: 14px;
-    }
-    
-    .btn, .btn-box {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-    
-    .table-content {
-        padding: 15px;
-    }
-    
-    .conversion-text h3 {
-        font-size: 16px;
     }
 }
