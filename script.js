@@ -31,7 +31,7 @@ live_exchange();
 bai();
 
 function bai(){
-    fetch('https://exchange-api-9mmx.onrender.com/get_bai_rates/') 
+    fetch('https://exchange-api-8mcm.onrender.com/get_bai_rates/') 
         .then (response => response.json())
         .then (data => {
             console.log(data);
@@ -60,7 +60,7 @@ function bai(){
 
 function bic(){
 
-    fetch ('https://exchange-api-9mmx.onrender.com/get_bic_rates/')
+    fetch ('https://exchange-api-8mcm.onrender.com/get_bic_rates/')
         .then (response => response.json())
         .then (data => {
             console.log(data);
@@ -88,7 +88,7 @@ function bic(){
 
 
 function std(){
-    fetch('https://exchange-api-9mmx.onrender.com/get_standard_rates/')
+    fetch('https://exchange-api-8mcm.onrender.com/get_standard_rates/')
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -128,7 +128,7 @@ function bai_conversion(){
 }
 
 function bai_convert_now(source_currency, target_currency, amount){
-    fetch (`https://exchange-api-9mmx.onrender.com/bai/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
+    fetch (`https://exchange-api-8mcm.onrender.com/bai/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
         .then (response => response.json())
         .then (data => {
             console.log(data);
@@ -150,7 +150,7 @@ function bai_convert_now(source_currency, target_currency, amount){
 }
 
 function bic_convert_now(source_currency, target_currency, amount){
-    fetch (`https://exchange-api-9mmx.onrender.com/bic/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
+    fetch (`https://exchange-api-8mcm.onrender.com/bic/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
         .then (response => response.json())
         .then (data => {
             console.log(data);
@@ -185,7 +185,7 @@ function bic_conversion(){
 
 
 function std_convert_now(source_currency, target_currency, amount){
-    fetch (`https://exchange-api-9mmx.onrender.com/standard/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
+    fetch (`https://exchange-api-8mcm.onrender.com/standard/convert/?source_currency=${source_currency}&target_currency=${target_currency}&amount=${amount}`)
         .then (response => response.json())
         .then (data => {
             console.log(data);
