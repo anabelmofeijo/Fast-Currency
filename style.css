@@ -88,6 +88,15 @@ li a:hover::after{
     color: rgba(0, 128, 0, 0.753);
 }
 
+.text-home {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 .btn {
     color: black;
     position: relative;
@@ -159,6 +168,15 @@ li a:hover::after{
 }
 .service-box span {
     color: green;
+}
+
+.text-p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .text p {
@@ -274,96 +292,84 @@ li a:hover::after{
     font-weight: 300;
 }
 /* Tables */
-
-.tables{
+.tables {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 80px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px 80px;
 }
-    
 
+.table-title {
+    padding: 20px 0;
+    text-align: center;
+}
 
 .table-title h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 50px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.table-title hr{
-    margin-left: 425px;
-    border: none;
-    width: 159px;
+.table-title hr {
+    margin: 0 auto;
+    width: 160px;
     height: 4px;
+    border: none;
     background-color: green;
     border-radius: 5px;
 }
 
-.table-title {
-    padding-bottom: 20px;
-}
-
-.table-content{
-    width: 100%;
-    border: 10px;
-    padding: 90px;
+.table-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
 }
 
 .table-content table {
-    width: 50%;
-    border: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.table-content table {
-    width: 600px;
-    padding-bottom: 50px;
-}
-
-
-.table-content table td {
+.table-content th,
+.table-content td {
+    padding: 10px;
     font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
-.table-content table th{
-    font-size: 20px;
-    padding-right: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    
+.table-content th {
+    font-size: 18px;
+    background-color: #f4f4f4;
 }
 
-.table-content table td{
-    padding: 8px;
+.table-content .coin-name {
+    text-align: left;
+    color: green;
+    font-weight: 500;
 }
 
-.table-content table #table-name{
-    padding-left: 20px;
+.table-content .table-label label {
+    display: inline-block;
+    margin: 10px 10px 0 0;
 }
 
-.table-content table .coin-name {
-    display: flex;
-    justify-content: flex-start;
-    border-color: green;
+.live-btn {
+    margin-top: 15px;
 }
 
+/* Imagem ao lado da tabela */
 .table-img img {
-    height: 400px;
-    width: 500px;
-    right: 0;
-    bottom: 0;
-    height: 80%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
 }
 
-.table-content .table-label label{
-    padding-top: 20px;
-    padding-left: 10px;
-    margin-right: 20px;
-}
 
 .live-btn {
     padding-top: 20px;
@@ -419,8 +425,6 @@ footer {
     padding-left: 60px;
 }
 
-
-
 /* Responsividade para celulares */
 @media (max-width: 768px) {
     /* Ajustes gerais */
@@ -431,7 +435,7 @@ footer {
     /* Navbar */
     .navbar {
         flex-direction: column;
-        align-items: stretch; /* Alterado para ocupar toda a largura */
+        align-items: stretch; 
         padding: 15px;
         margin-top: 0;
     }
@@ -439,7 +443,7 @@ footer {
     .logo {
         margin-bottom: 15px;
         margin-left: 0;
-        text-align: center; /* Centraliza o logo */
+        text-align: center; 
     }
     
     .logo a {
@@ -449,21 +453,21 @@ footer {
     .nav ul {
         width: 100%;
         display: flex;
-        flex-direction: row; /* Mantém em linha para mobile */
-        justify-content: space-between; /* Distribui igualmente */
-        padding: 20 20px; /* Adiciona padding nas laterais */
+        flex-direction: row;
+        justify-content: space-between; 
+        padding: 20 20px; 
     }
     
     .nav ul li {
         margin: 0;
-        flex: 1; /* Faz cada item ocupar espaço igual */
-        text-align: center; /* Centraliza o texto */
+        flex: 1; 
+        text-align: center; 
     }
     
     .nav ul li a {
         font-size: 16px;
-        display: block; /* Faz o link ocupar todo o espaço do li */
-        padding: 8px 0; /* Adiciona espaço vertical */
+        display: block;
+        padding: 8px 0; 
     }
     
     /* Home section */
@@ -623,10 +627,22 @@ footer {
         margin-bottom: 15px;
     }
 
+    .quick-link {
+        margin-right: 40px;
+    }
+
+    .follow-us {
+        margin-right: 20px;
+    }
+
     .follow{
         display: flex;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 40px;
+    }
+
+    .contact-us {
+        margin-right: 30px;
     }
     
     .icones {
@@ -640,6 +656,39 @@ footer {
         font-size: 14px;
     }
 
+    #convert-now {
+        display: block;
+        margin: 20px auto;
+    }
     
-     
+    .text-home {
+        font-size: 14px;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        padding: 20px;
+    }
+
+    .tables {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-content {
+        padding: 10px;
+    }
+
+    .table-title h1 {
+        font-size: 30px;
+    }
+
+    .table-content th,
+    .table-content td {
+        font-size: 14px;
+    }
+
+    .table-img img {
+        width: 100%;
+    }
 }
