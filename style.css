@@ -1283,9 +1283,7 @@ footer {
   .newsletter {
     padding-left: 30px;
   }
-  .newsletter form {
-    padding-left: 30px;
-  }
+
 
   /* Rodapé Inferior */
   .footer-bottom {
@@ -1337,16 +1335,22 @@ footer {
         gap: 10px;
     }
 
+    .newsletter form {
+        max-width: 220px;
+        height: 32px; /* Altura fixa */
+    }
+    
+    .newsletter input {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .newsletter button {
+        padding: 0 10px;
+    }
 
     .newsletter {
-        padding-left: 10px;
-    }
-    .newsletter form {
-        padding-left: 10px;
-    }
-
-    .footer-links {
-        padding-left: 20px;
+        padding-right: 20px;
     }
 
 }
