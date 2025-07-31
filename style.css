@@ -213,32 +213,44 @@ li a:hover::after{
 }
    
 .btn-box {
-    color: black;
-    position: relative;
-    border-radius: 30px;
-    padding: 12px 40px;
-    border: 2px solid  rgba(0, 128, 0, 0.795);
-    background: transparent;
+    display: block;
+    width: 220px;
+    margin: 0;
+    padding: 16px 24px;
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: .3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
-.btn-box::before{
-    content: "";
+.btn-box::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 128, 0, 0.459);
-    transform: scaleX(1);
-    transform-origin: left;
-    transition: .3s;
+    background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
 }
 
-.btn-box:hover::before{
-    transform: scaleX(0);
+.btn-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-box:hover::before {
+    opacity: 1;
 }
 
 .services .service-box{
@@ -595,6 +607,10 @@ footer {
         padding: 0;
     }
 
+    .btn-box {
+        margin: 0 auto;
+    }
+
     .navbar {
         position: fixed;
         top: 0;
@@ -929,6 +945,13 @@ footer {
         background: radial-gradient(circle at 10% 20%, #f0fff4 0%, #ffffff 90%);
         position: relative;
         overflow: hidden;
+        min-height: 100vh;
+    }
+
+    .conversion-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .conversion::after {
