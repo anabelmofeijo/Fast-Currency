@@ -18,6 +18,28 @@
     margin-top: 25px;
 }
 
+/* Menu Toggle Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
 /* Logo Settings*/
 .logo a {
     font-size: 30px;
@@ -174,7 +196,7 @@ li a:hover::after{
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    max-width: 300px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -425,29 +447,39 @@ footer {
     padding-left: 60px;
 }
 
+.quick-link {
+    margin-left: 30px;
+}
+
 /* Responsividade para celulares */
 @media (max-width: 768px) {
     /* Ajustes gerais */
     * {
         padding-right: 0;
     }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+        padding: 15px 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
     
     /* Navbar */
-    .navbar {
-        flex-direction: column;
-        align-items: stretch; 
-        padding: 15px;
-        margin-top: 0;
-    }
-
+    
     .logo {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         margin-left: 0;
         text-align: center; 
     }
     
     .logo a {
-        font-size: 24px;
+        font-size: 23px;
     }
     
     .nav ul {
@@ -691,4 +723,59 @@ footer {
     .table-img img {
         width: 100%;
     }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar  {
+        display: flex;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        padding-top: 80px;
+        transition: right 0.3s ease;
+        z-index: 99;
+    }
+    
+    .nav.active {
+        right: 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .nav ul li {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .nav ul li a {
+        margin-right: 0;
+        font-size: 18px;
+    }
+    
+    /* Animação do botão quando o menu está aberto */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
 }
