@@ -6,6 +6,7 @@
     <title>Fast Currency</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -217,37 +218,52 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <h3 class="contact-us">Contact Us</h3>
-            <p>Email: info@gmail.com</p>
-            <p>Phone: +123 93436267</p>
-            <p>Address: Luanda</p>
-        </div>
-
-        <div class="footer-content">
-            <h3 class="quick-link">Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Convert Now</a></li>
-                <li><a href="#">Live Exchange Rates</a></li>
+    <footer class="footer" >
+        <div class="footer-container">
+          <!-- Contato -->
+          <div class="footer-section">
+            <h3 class="footer-title" id="contact-us">Contact Us</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-envelope"></i> info@fastcurrency.com</li>
+              <li><i class="fas fa-phone"></i> +244 123 456 789</li>
+              <li><i class="fas fa-map-marker-alt"></i> Luanda, Angola</li>
             </ul>
-        </div>
+          </div>
+      
+          <!-- Links -->
+          <div class="footer-section">
+            <h3 class="footer-title" id="quick-links">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="#live-exchange"><i class="fas fa-chevron-right"></i> Rates</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+              <li><a href="#conversion"><i class="fas fa-chevron-right"></i> Convert</a></li>
 
-        <div class="footer-content">
-            <h3 class="follow-us">Follow Us</h3>
-            <div class="follow"> 
-                <li class="icones"><a href="#"><img src="/images/facebook_1077041.png" alt="facebook"></a></li>
-                <li class="icones"><a href="#"><img src="/images/instagram_1076991.png" alt="instagram"></a></li>
-                <li class="icones"><a href="#"><img src="/images/linkedin_1419502.png" alt="LinkedIn"></a></li>
+            </ul>
+          </div>
+      
+          <!-- Redes Sociais -->
+          <div class="footer-section">
+            <h3 class="footer-title" id="follow-us">Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+            <div class="newsletter">
+              <p>Subscribe for updates</p>
+              <form>
+                <input type="email" placeholder="Your email">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
         </div>
-    </footer>
-
-    <div class="footer-bottom">
-        <p>Copyright &copy;2025, Designed by <span class="designed">Anabelmo Feijo</span></p>
-    </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 FastCurrency. Designed by <span>Anabelmo Feijo</span></p>
+        </div>
+      </footer>
 
     <script src="script.js"></script>
 </body>
