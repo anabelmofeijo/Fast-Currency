@@ -1335,23 +1335,37 @@ footer {
         gap: 10px;
     }
 
-    .newsletter form {
-        max-width: 220px;
-        height: 32px; /* Altura fixa */
-    }
-    
-    .newsletter input {
-        padding: 4px 8px;
-        font-size: 0.8rem;
-    }
-    
-    .newsletter button {
-        padding: 0 10px;
-    }
-
     .newsletter {
-        padding-right: 20px;
-    }
+        padding: 10px 20px;
+        width: 100%;
+      }
+      
+      .newsletter form {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+      }
+      
+      .newsletter input {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+      .newsletter button {
+        padding: 10px;
+        font-size: 1rem;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
 
 }
   
